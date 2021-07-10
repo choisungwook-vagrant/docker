@@ -25,7 +25,7 @@ Vagrant.configure("2") do |config|
     # install docker
     cfg.vm.provision "shell", inline: <<-SCRIPT
       yum install -y epel-relase
-      yum install -y python3 vim net-tools tmux strace htop
+      yum install -y python3 vim net-tools tmux strace htop psmisc
       yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
       yum install docker-ce docker-ce-cli containerd.io docker-compose -y
       systemctl enable docker
