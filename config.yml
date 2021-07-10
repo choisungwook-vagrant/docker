@@ -1,0 +1,7 @@
+server:
+  name: docker-test
+  box: ubuntu/bionic64
+  hostname: docker-test
+  ip: 192.168.25.35
+  memory: 4096
+  cpu: 2
